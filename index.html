@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIPHY-Powered GIF Grabber</title>
+
+    <!-- Link to CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to JavaScript -->
+    <script src="assets/javascript/logic.js"></script>
+</head>
+<body>
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center" id="main-header">GIF Grabber</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <!-- GIF Card -->
+      <div class="col-lg-12">
+        <div class="card">
+          <h3 class="card-header">GIF Interface</h3><br>
+          <h4>Topics (Click one to make GIFs):</h4><br>
+          <div id="buttons"></div>
+          <form id="the-form">
+              <h4>Create New Topic:</h4>
+              <input type="text" id="text-box" name="new-button" value=""><br><br>
+              <select id="drop"></select>  Number of GIFs related to the topic to grab<br>
+              <input type="checkbox" id="mature" checked>  Exclude R-rated GIFs in search<br><br>
+          </form>
+          <br>
+          <button id="sub" class="btn btn-dark" style="width: 15%"><h4>Add New Topic</h4></button><br>
+          <h4 id="information"></h4>
+          <div style="margin-top: 5px;">
+            <button id="remove" class="btn btn-dark" style="width: 15%"><h4>Remove Topic</h4></button>
+          </div>
+          <div style="margin-top: 5px;">
+            <button id="clear" class="btn btn-dark" style="width: 15%"><h4>Clear GIFs</h4></button>
+          </div>
+          <div id="gif-area">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
