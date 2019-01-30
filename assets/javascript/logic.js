@@ -90,7 +90,7 @@ $(document).ready(function() {
             var indicesUsed = [];
             var val = $(btn).attr("value");
             val = val.replace(/ /g, '+');
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q="+val+"&api_key="+apiKey+"&limit=" + (1000);
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q="+val+"&api_key="+apiKey+"&limit=" + (1000);
             $.ajax({
                 url: queryURL,
                 method: "GET"
