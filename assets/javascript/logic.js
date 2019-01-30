@@ -103,7 +103,8 @@ $(document).ready(function() {
                         var newIndex = -1;
                         while(newIndex === -1 || indicesUsed.indexOf(newIndex) !== -1) {
                             newIndex = Math.floor(Math.random() * gifArray.length);
-                            if(Math.random() < 0.8) {
+                            // Randomly weight results towards the head of the search results to slightly improve relevancy
+                            if(Math.random() < 0.5) {
                                 newIndex = Math.floor(newIndex / 2);
                             }
                         }
