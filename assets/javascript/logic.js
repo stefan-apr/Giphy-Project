@@ -103,6 +103,9 @@ $(document).ready(function() {
                         var newIndex = -1;
                         while(newIndex === -1 || indicesUsed.indexOf(newIndex) !== -1) {
                             newIndex = Math.floor(Math.random() * gifArray.length);
+                            if(Math.random() < 0.8) {
+                                newIndex = Math.floor(newIndex / 2);
+                            }
                         }
                         if(isChecked && gifArray[newIndex].rating === "r") {
                             
